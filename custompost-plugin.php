@@ -34,7 +34,7 @@ add_action( 'init', 'cp_type' );
 // calling the file that makes our cpt widget
 require ( plugin_dir_path( __FILE__ ) . 'inc/cptwidget.php');
 
-
-
+// calling the file that contains the shortcode function
+require ( plugin_dir_path( __FILE__ ) . 'inc/custom_shortcode.php');
 
 ?>
