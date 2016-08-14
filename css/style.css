@@ -1,0 +1,4 @@
+/* Stylizing list-item class to get rid of bulletins for list items */
+.list-item {
+	list-style-type: none;
+}

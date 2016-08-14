@@ -31,6 +31,9 @@ function cp_type() {
 }
 add_action( 'init', 'cp_type' );
 
+// calling the file that makes our cpt widget
+require ( plugin_dir_path( __FILE__ ) . 'inc/cptwidget.php');
+
 
 
 
