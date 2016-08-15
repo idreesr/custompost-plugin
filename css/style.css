@@ -2,3 +2,12 @@
 .list-item {
 	list-style-type: none;
 }
+/* this makes widget images responsive */
+#cpt-widget img {
+	max-height: 80%;
+	max-width: 80%;
+}
+/* stylizes the titles of posts in cpt widget */
+p.cpt-link {
+	border-top: 0.05em solid #ADBDC1;
+}

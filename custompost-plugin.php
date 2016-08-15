@@ -14,14 +14,16 @@ function add_plugin_styles() {
 }
 add_action( 'wp_enqueue_scripts', 'add_plugin_styles' );
 
-// this function creates a custom post type
+// this function creates the custom post type cp_design
 function cp_type() {
+  // this function is what creates a custom post type
   register_post_type( 'cp_design',
     array(
       'labels' => array(
         'name' => __( 'Design' ),
         'singular_name' => __( 'Design' )
       ),
+      // setting public to true shows the cpt on the admin screens and in the site content itself
       'public' => true,
       'has_archive' => true,
       // adding support for featured images, etc. in the CPT post editor

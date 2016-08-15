@@ -1,9 +1,16 @@
 <?php
 
 // this function creates a form for users to input information in
-function form_shortcode() {
+function form_shortcode($atts , $content=null) {
+	extract( shortcode_atts
+		(array(
+			'email'=>'me@me.com',
+			), $atts )
+		);
+	// returns a form that contains two small text boxes and one large text box
+	// also contains a submit and reset form button
 	return '<div class="form">
-		<form action="mailto:me@me.com" method="post" name="theform" class="theform">
+		<form action="mailto:'.$email.'" method="post" name="theform" class="theform" enctype="text/plain">
 			<p>
 				<label for="fullname">Name:</label>
 				<br />
@@ -30,6 +37,7 @@ function form_shortcode() {
 	</div>';
 
 }
+// this function adds a hook for a shortcode tag
 add_shortcode( 'form_shortcode', 'form_shortcode' );
 
 ?>
