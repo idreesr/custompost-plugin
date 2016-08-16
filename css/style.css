@@ -11,3 +11,20 @@
 p.cpt-link {
 	border-top: 0.05em solid #ADBDC1;
 }
+/* stylizes the signature text */
+.signature {
+	border-top: 0.05em solid;
+	font-family: "Brush Script MT", cursive;
+	font-size: 2em;
+}
+/* stylizes the related posts shortcode */
+.related-posts {
+	border: 0.05em solid #ADBDC1;
+	padding: 0.05em;
+	text-align: center;
+}
+/* stylizes the list items in the related posts shortcode */
+li.rp-list {
+	display: inline-block;
+	padding-right: 1em;
+}
